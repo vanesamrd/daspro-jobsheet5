@@ -10,10 +10,15 @@ public class PemilihanBilangan24 {
         System.out.println("Masukkan sebuah angka: ");
         int angka = sc.nextInt();
 
-        if (angka % 2 == 0) {
-            System.out.println("Angka " + angka + " termasuk bilangan genap ");
-        } else {
-            System.out.println("Angka " + angka + " termasuk bilangan ganjil ");
-        }
+        // if (angka % 2 == 0) {
+        //     System.out.println("Angka " + angka + " termasuk bilangan genap ");
+        // } else {
+        //     System.out.println("Angka " + angka + " termasuk bilangan ganjil ");
+        // }
+
+        // tenary
+        String hasil = angka % 2 == 0 ? "Genap" : "Ganjil";
+        System.out.println("Angka " + angka + " termasuk bilangan " + hasil);
+    
     }
 }
